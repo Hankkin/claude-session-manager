@@ -1,0 +1,36 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3:*)",
+      "Bash(grep -iB1 \"paint\\\\|draw\\\\|canvas\\\\|sketch\\\\|畫\")",
+      "Bash(bash -l -c \"claude --help\")",
+      "Bash(bash -l -c \"claude --resume f4dbf0a7-4fb2-4fa8-af75-1f8cd76ff8e8\")",
+      "Read(//private/tmp/**)",
+      "Bash(ls -la ~/.claude/projects/*/)",
+      "Bash(bash -l -c \"claude --resume f4dbf0a7-4fb2-4fa8-af75-1f8cd76ff8e8 --fork-session 2>&1\")",
+      "Bash(bash -l -c \"claude --continue 2>&1\")",
+      "Bash(/bin/bash -l -c \"claude --resume f4dbf0a7-4fb2-4fa8-af75-1f8cd76ff8e8\")",
+      "Bash(bash -l -c 'claude --resume f4dbf0a7-4fb2-4fa8-af75-1f8cd76ff8e8 --continue \"继续之前的对话\" 2>&1')",
+      "Bash(bash -l -c 'claude \"继续之前的对话\"')",
+      "Bash(mdfind -only /Applications \"kMDItemDisplayName == 'Claude*'\")",
+      "Bash(mdfind \"kMDItemDisplayName == 'Claude*'\")",
+      "Bash(xargs -I {} sh -c 'echo \"{}\" && sips -p 1 -s format icns \"{}\" --out /dev/null 2>&1')",
+      "Bash(cat ~/.claude/shell-snapshots/snapshot-zsh-*)",
+      "Bash(system_profiler SPApplicationsDirectoryDataType)",
+      "Bash(pip show:*)",
+      "Bash(mkdir -p \"ClaudeSessionManager.app/Contents/MacOS\")",
+      "Bash(mkdir -p \"ClaudeSessionManager.app/Contents/Resources\")",
+      "Bash(chmod +x:*)",
+      "Bash(xargs -I {} ls -la \"{}\")",
+      "Bash(sips:*)",
+      "Bash(qlmanage:*)",
+      "Bash(ls -la /tmp/*.png)",
+      "Bash(mkdir -p /tmp/claude_icon.iconset)",
+      "Bash(iconutil -c icns /tmp/claude_icon.iconset -o \"/Users/hankkin/Documents/AI/claude/claude-session-manager/ClaudeSessionManager.app/Contents/Resources/app.icns\")",
+      "Bash(cp:*)",
+      "Bash(rm -rf \"/Applications/ClaudeSessionManager.app\")",
+      "Bash(cp -R \"/Users/hankkin/Documents/AI/claude/claude-session-manager/ClaudeSessionManager.app\" \"/Applications/\")",
+      "Bash(\"/Applications/ClaudeSessionManager.app/Contents/MacOS/launcher\")"
+    ]
+  }
+}
